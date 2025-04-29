@@ -13,10 +13,22 @@ void testWeightToKG()
     }
 }
 
-
+//Checks if height is correctly being converted from feet to inches
+void HeightToMetres()
+{
+    if (height2metres(0,0) == 0 && height2metres(5,9) > 1.74 && height2metres(5,9) < 1.74)
+    {
+        std::cout << "HeightToMetres test passed." <<std::endl;
+    }
+    else
+    {
+        std::cout << "HeightToMetres test failed." <<std::endl;
+    }
+}
 
 
 int dev(int argc, char *argv[]){
-    testWeightToKG();    
+    testWeightToKG();
+    HeightToMetres();
     return 0;
 }
