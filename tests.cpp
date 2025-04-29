@@ -1,4 +1,4 @@
-#include <bmi.cpp>
+#include "bmi.cpp"
 #include <iostream>
 
 //Checks if this method is functioning properly and converts everything correctly
