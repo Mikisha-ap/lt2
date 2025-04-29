@@ -27,7 +27,7 @@ double weight2kg(int stones, int pounds, int ounces)
 double height2metres(int feet, int inches)
 {
     //Corrected calculation 
-    return(feet * 112 + inches) * 0.0254;
+    return(feet * 12 + inches) * 0.0254;
 }
 
 char categorise(double kg, double metre)
@@ -53,7 +53,7 @@ void process_data(char* input_file, char* output_file)
     string person_id;
     int pounds, stones, ounces, feet, inches;
     double kg, m;
-    int cat;
+    char cat;
 
     f_in.open(input_file,ios::in);
     f_out.open(output_file,ofstream::out);
@@ -77,5 +77,5 @@ int main(int argc, char *argv[])
     }
     // KJN - Need to check that 3 arguments were supplied upon execution
     process_data(argv[1], argv[2]);
-    return -1;
+    return 0;
 }
