@@ -26,9 +26,23 @@ void HeightToMetres()
     }
 }
 
+//Checks BMI catergoisation based on calculations
+void BMICategorisationTest()
+{
+    double height = 1.7;
+    if (categorise(50, height)== 'B' && categorise(30, height)== 'A' && categorise(90, height)== 'D')
+    {
+        std::cout << "Categotise test passed." <<std::endl;
+    }
+    else{
+        std::cout << "Categotise test failed." <<std::endl;
+    }
+}
+
 
 int dev(int argc, char *argv[]){
     testWeightToKG();
     HeightToMetres();
+    BMICategorisationTest();
     return 0;
 }
